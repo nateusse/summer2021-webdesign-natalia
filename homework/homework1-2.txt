@@ -1,13 +1,5 @@
-
-Asus@LAPTOP-IJNTJ9U1 MINGW64 ~/OneDrive/Escritorio/summer2021-webdesign-natalia
-$ pwd
-/c/Users/Asus/OneDrive/Escritorio/summer2021-webdesign-natalia
-
-Asus@LAPTOP-IJNTJ9U1 MINGW64 ~/OneDrive/Escritorio/summer2021-webdesign-natalia
-$ mkdir homework
-
-Asus@LAPTOP-IJNTJ9U1 MINGW64 ~/OneDrive/Escritorio/summer2021-webdesign-natalia
-$ touch homework1-2.txt
-
-Asus@LAPTOP-IJNTJ9U1 MINGW64 ~/OneDrive/Escritorio/summer2021-webdesign-natalia
-$
+nat@mamasita:~/study/summer2021-webdesign-natalia$ ls
+assignments  handouts  projects
+nat@mamasita:~/study/summer2021-webdesign-natalia$ mkdir homework
+nat@mamasita:~/study/summer2021-webdesign-natalia$ cd homework
+nat@mamasita:~/study/summer2021-webdesign-natalia/homework$ touch homework1-2.txt

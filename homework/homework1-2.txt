@@ -1,0 +1,13 @@
+
+Asus@LAPTOP-IJNTJ9U1 MINGW64 ~/OneDrive/Escritorio/summer2021-webdesign-natalia
+$ pwd
+/c/Users/Asus/OneDrive/Escritorio/summer2021-webdesign-natalia
+
+Asus@LAPTOP-IJNTJ9U1 MINGW64 ~/OneDrive/Escritorio/summer2021-webdesign-natalia
+$ mkdir homework
+
+Asus@LAPTOP-IJNTJ9U1 MINGW64 ~/OneDrive/Escritorio/summer2021-webdesign-natalia
+$ touch homework1-2.txt
+
+Asus@LAPTOP-IJNTJ9U1 MINGW64 ~/OneDrive/Escritorio/summer2021-webdesign-natalia
+$

@@ -19,3 +19,7 @@ body{
     align-items: center;
     font-size: 100px;
 }
+
+p{
+    color: white;
+}

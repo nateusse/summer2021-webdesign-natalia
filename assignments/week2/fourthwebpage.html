@@ -1,0 +1,44 @@
+<!-- the quote is for quotes, usually paraphrasing other's words. -->
+<p>My favorite quote is <q>Never bite the hand that feeds you.</q></p>
+
+<!-- double and single quotes can be used but loses semantic value if the text is an actual quote. -->
+<p>My favorite quote isn't "Never bite the hand that feeds you."</p>
+
+<!-- Creates a "seperation" between content by drawing a line. -->
+<hr />
+
+<!-- A container to hold a quote that is not part of the main content flow. br tag is to force a line to break between text. -->
+<blockquote>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, optio! Neque amet sed maxime ab deleniti!<br />Aut earum quasi voluptatum eveniet accusantium fugiat amet molestiae ut voluptate distinctio! Unde, soluta!</blockquote>
+
+<!-- the table is a container representing a data table-->
+<table>
+
+    <!-- the thead element is to add semantic value to specific rows signifying they are NOT data -->
+    <thead>
+        <!-- tr is an individual table row. -->
+        <tr>
+            <!-- td is the data for a single column, should have a parent of tr.  you can "stretch" a table data element to take more than one column using the colspan attribute-->
+            <td colspan="2">Valid Human Foods</td>
+        </tr>
+        <tr>
+            <!-- th is table header, a lot like table data but is NOT data-->
+            <th>Food Name</th>
+            <th>Is Valid?</th>
+        </tr>
+    </thead>
+    <!-- the tbody element is to add semantic value to specific rows signifying they are ARE data -->
+    <tbody>
+        <tr>
+            <td>Pizza</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Sushi</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Plastic</td>
+            <td>False</td>
+        </tr>
+    </tbody>
+</table>

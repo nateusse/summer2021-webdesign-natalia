@@ -1,12 +1,61 @@
 <!DOCTYPE html>
+<!-- this is a comment for HTML -->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <head>
+        <meta charset="utf-8" />
+        <title>Learning CSS</title>
+
+        <style>
+/* CSS Syntax: 
+CSS Ruleset is "everything" from selector to closing curly brace
+Selector {
+    Property Name: value;
+    Property Name: value;
+}
+*/
+body {
+    /* comment */
+    background:linear-gradient(180deg, rgb(99, 92, 241) 0%, rgb(77, 77, 196) 35%, rgba(0,212,255,1) 100%);
+}
+
+
+p {
+    /* Color is for text only! There is text-color property! */
+    color: rgb(231, 245, 243);
+    font-size: 30px;
+    font-family: "Apple Chancery";
     
-</body>
+    /* 
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    */
+
+    border-bottom-color: rgb(204, 181, 80);
+    border-bottom-width: 5px;
+    border-bottom-style: double;
+
+    border-left-color: rgb(179, 255, 0);
+    border-left-width: 10px;
+    border-left-style: dotted;
+    border-radius: 40px;
+}
+
+h1 {
+    color: rgb(76, 29, 80);
+    text-align: right;
+    font-size: 42px;
+    font-family: "Arial";
+    width: 600px;
+    height: 84px;
+    border-style: groove;
+    border-color: azure;
+}
+        </style>
+    </head>
+    <body>
+        <h1>Practicing gradiant, borders</h1>
+        <p>border bottom double and left dotted</p>
+        <p>This is the second sentence</p>
+    </body>
 </html>

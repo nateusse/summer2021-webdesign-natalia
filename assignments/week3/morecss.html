@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>More CSS</title>
+
+        <!-- Internal Stylesheets -->
+        <style>
+body {
+    background-color:rgb(255, 177, 59);
+}
+
+/* 
+Specificity Values
+One Element = 1 point
+One Class = 10 points
+One ID = 100 points
+ */
+
+img {
+    height: 200px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:burlywood;
+    border-radius: 20px;
+}
+/* Select a class needs to start with a period. Can be applied to multiple elements. */
+.portrait {
+    border-color:lightcoral;
+}
+
+/* Select an id needs to start with the hash symbol. Can ONLY be applied to one element (per unique ID). */
+#sun {
+    box-shadow: 10px 10px grey;
+}
+
+div {
+    background-color:rgb(104, 252, 104);
+    width: 600px;
+    border: green solid 5px;
+    border-radius: 10px;
+    color: red;
+}
+
+div h1 {
+    color: grey;
+}
+
+body div .portrait {
+    border-color:cornflowerblue;
+}
+
+#happy {
+    color:mediumorchid;
+    text-decoration: line-through;
+}
+        </style>
+    </head>
+    <body>
+        <h1>My favorite flowers and their colors</h1>
+
+        <img class="portrait" src="../week3/images/rosa.jpg" alt="a lot of pink flowers" />
+
+        <img src="../week3/images/amarillo.jpg" alt="Hands holding yellow flower with other yellow flowers in the background." />
+
+        <a href="https://google.com/" target="_blank"><img class="portrait" src="../week3/images/blanco.jpg" alt="three white flowers in black  background" /></a>
+
+        <img id="sun" src="../week3/images/morado.jpg" alt="Purple long thin flower with three buterflies around" />
+
+        <div>
+            <h1>My favorite <span id="happy">colors</span> in flowers</h1>
+
+           
+        <img class="portrait" src="../week3/images/rosa.jpg" alt="a lot of pink flowers" />
+
+        <img src="../week3/images/amarillo.jpg" alt="Hands holding yellow flower with other yellow flowers in the background." />
+
+        <a href="https://google.com/" target="_blank"><img class="portrait" src="../week3/images/blanco.jpg" alt="three white flowers in black  background" /></a>
+
+        <img id="sun" src="../week3/images/morado.jpg" alt="Purple long thin flower with three buterflies around" />
+        </div>
+    </body>
+
+</html>

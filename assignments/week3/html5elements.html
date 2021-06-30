@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Looking at HTML5 Elements</title>
+
+        <style>
+
+p, h1 {
+    /* When you want to set the value to nothing, use 0 with NO units. */
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+body {
+    margin: 20px;
+    padding: 20px;
+}
+
+#redbox, #purplebox {
+    display: inline-block;
+    width: 180px;
+    height: 100px;
+    background-color: red;
+    padding-left: 20px;
+    padding-top: 20px;
+    /* margin-bottom: 20px; */
+    margin-left: 20px;
+    border: 5px grey solid;
+    border-radius: 20px;
+}
+
+#purplebox {
+    background-color: purple;
+    width: 300px;
+}
+
+#greenbox, #yellowbox {
+    height: 50px;
+    background-color: green;
+    margin-top: 10px;
+}
+
+#yellowbox {
+    background-color: yellow;
+}
+
+/* Direct descendant selector, the second element should be a direct child of the first element. */
+body > p {
+    display: inline;
+    vertical-align: bottom;
+}
+        </style>
+    </head>
+
+    <body>
+
+        <div id="redbox">
+            <p>O</p>
+
+            <div id="greenbox">
+                <p>VVVVVVVVVVVVVVV</p>
+            </div>
+        </div>
+
+
+        <div id="purplebox">
+            <p>O</p>
+
+            <div id="yellowbox">
+                <p>VVVVVVVVVVVVVVV</p>
+            </div>
+        </div> 
+        
+        <p>This should be next to the purple box</p>
+        
+
+        <!-- The header section would include logo, website name, any login/search icons, navigation. This should be the same for every webpage of the website.-->
+        <header>
+            <!-- The nav element is for your navigation links -->
+            <nav></nav>
+        </header>
+
+        <!-- The main section would include the content of that webpage-->
+        <main>
+            <article></article>
+            <section></section>
+        </main>
+
+        <!-- The footer section would include contact, possibly the navigation again, copyright, possibly social media links. This should be the same for every webpage of the website. -->
+        <footer></footer>
+
+    </body>
+</html>

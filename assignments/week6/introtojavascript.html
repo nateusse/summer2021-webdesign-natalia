@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Introduction to JavaScript</title>
+    </head>
+
+    <body>
+
+        <script>
+
+            /*
+            Multi-line
+            comment
+            */
+
+            // Single-line comment
+
+            // console.log() is used to pass a value to the Console. The value passed is inside of the parathesis.
+            console.log("hello");
+
+            console.log(1000);
+
+            console.log("goodbye");
+
+            console.log(false);
+
+            // Datatypes: Strings, Numbers, Booleans.
+            "This is a string";
+            1800000;
+            true;
+
+            // What is the datatype:
+            "190000";
+            190000;
+            "       ";
+            "true";
+            true;
+            false;
+            
+            // Addition and Concatenation
+            console.log(1 + 1);
+            console.log("1" + "1");
+            console.log("Hello" + " There");
+            console.log("Hello There");
+
+            // Subtraction
+            console.log(10 - 9);
+            console.log(9 - 10);
+
+            // Multiplayer, asterisk symbol
+            console.log(100 * 100);
+
+            // Division, forward slash
+            console.log(90 / 5);
+            console.log(5 / 90);
+
+            // Modulus, Percentage sign
+            console.log(90 % 5);
+            console.log(90 % 11);
+
+            // BODMAS, order of operations.
+            console.log(10 + 50 / 40 * 90);
+
+            console.log(10 * 10 / (5 + 1));
+            console.log(10 * 10 / 5 + 1);
+
+            // Coercion, forcing a datatype to be another datatype.
+            console.log(100 + "100"); // "100100"
+
+            // parseInt() function, ATTEMPTS to convert a String into a Number.
+            console.log(100 + parseInt("100")); // 200
+
+            console.log(parseInt("hello")); // NaN
+            console.log(parseInt("10hello10")); // 10
+            console.log(parseInt("10.10hello"));// 10
+            console.log(parseInt("hello10")); // NaN
+
+            // Variable
+
+            // Variable are used to holding data that CAN change.
+            var myFirstVariable = "hi";
+            console.log(myFirstVariable);
+
+            // Hard-coding means the code will never change.
+            console.log("hello");
+
+            // Using Variables
+
+            var number1 = 10;
+            var number2 = 5;
+
+            console.log(10 + 5);
+
+            // Variables can be "called" as many times as you want.
+            console.log(number1 + number2);
+
+            console.log(number1 * number2);
+
+            console.log(number1 * number1 + number1 / number1 + number1);
+
+
+            // Variables can hold only 1 value, the previous value "10" will dissappear and be replaced by "20".
+
+            // The equal size is not the MATH EQUAL. It is the assignment operator.
+            number1 = 20;
+
+            var number3 = 2;
+
+            console.log(number1 * number2 + number3);
+
+            var number4 = number1;
+
+            // Code on the right side of the assignment operator will happen first.
+            number4 = number4 + 1;
+
+            number1 = 30;
+
+            console.log(number4);
+
+
+            var num1 = 1;
+            var num2 = 2;
+            var num3 = 3;
+
+            var num4 = num1; // Called num1 here which is holding the value 1 and NOT 10, as that happens AFTER.
+
+            num1 = 10;
+
+            console.log(num4); // 1
+
+            // If Statements, checks value within the parenthesis, if false, skips code block, if true, runs code block.
+
+            /* If Statement syntax: 
+            if (condition) {
+                true code block
+            } else {
+                optional false code block
+            };
+            */
+
+            if (false) {
+                console.log("This is true.");
+            };
+
+            // console.log("Nice weather today.");
+
+            var isItRaining = true;
+            var umbrella = false;
+
+            if (isItRaining) {
+                
+                if (umbrella) {
+                    console.log("Don't forget your umbrella!");
+                } else {
+                    console.log("Recommended you take a plastic bag.");
+                };
+
+                var newVar = 100;
+
+            } else {
+                console.log("Enjoy your day!");
+            };
+
+            console.log("Thank you for coming!");
+
+            // comparison operators
+
+            // ==, The same on both sides will make a true boolean, otherwise a false boolean.
+            "A" == "a"; // false
+            "A" == "A"; // true
+            100 == "hundred"; // false
+            50 == 50; // true
+            true == false; // false
+            true == true; // true
+            false == false; // true
+
+            // !=, Must NOT (Not Equal To) be the same to be true, otherwise false.
+            10 != 10; // false
+            1 != 10; // true
+            -10 != 10; // true
+
+            // > If first number bigger than second number, then true, otherwise false.
+            100 > 5; // true
+            5 > 100; // false
+
+            // < If first number is smaller than second number, then true, otherwise false.
+            100 < 5; // false
+            5 < 100; // true
+
+            // >= If first number is bigger OR equal to second number, then true, otherwise false.
+            100 >= 5; // true
+            100 >= 100; // true
+            5 >= 100; // false
+
+            // <= If first number is smaller OR equal to second number, then true, otherwise false.
+            100 <= 5; // false
+            100 <= 100; // true
+            5 <= 100; // true
+
+            var number = 7;
+
+            // logical operators
+
+            // AND operator
+            true && false; // false
+            true && true; // true
+            false && false;  // false
+            number > 5 && number < 10; // true
+
+            // OR operator
+            true || false; // true
+            true || true; // true
+            false || false // false
+            number > 5 || number < 10; // true
+
+            // NOT operator
+            !true; // false
+            !false; // true
+
+            // Multiple Logical Operators, left to right.
+            true && false || true; // (true && false) || true
+
+
+
+            // Examples
+            var userAge = true;
+
+            if (userAge == 21) {
+                console.log("Congratulations, you can take drink of water.");
+            } else if (userAge <= 0) {
+                console.log("Please check your age value, you put in an invalid number.");
+            } else if (userAge < 21) {
+                console.log("Sorry but you can't drink just yet...");
+            } else if (userAge > 21) {
+                console.log("Wanna grab a glass of milk?");
+            }
+
+            // Similar to previous if statement but using Logical Operators.
+
+            if (userAge > 0 && userAge < 21) {
+                console.log("Cannot drink");
+            } else if (userAge >= 21) {
+                console.log("You can drink!");
+            } else {
+                console.log("invalid value");
+            }
+
+            // Truthy and Falsy Values (Type Coercion into a boolean)
+
+            // FALSY
+            0;
+            NaN;
+            "";
+            false;
+            null;
+            undefined;
+
+            var income2021 = null;
+            var value;
+
+
+            if (undefined) {
+                console.log("Truthy");
+            } else {
+                console.log("Falsy");
+            }
+
+            console.log(parseInt(true));
+
+            // Loops, the condition HAS TO CHANGE, or it will continue to run FOREVER (infinite loop).
+
+            // While loop. Checks if the condition is true. If true, execute code block. Rinse and repeat.
+            var counter = 0;
+
+            // In order to avoid INFINITE LOOPS, make sure the condition will sooner or later change to a false.
+            while (counter < 10) {
+                counter = counter + 1;
+
+                console.log(counter);
+            }
+
+
+
+            // Do While. Will execute code FIRST, and THEN check condition to run it again. Will always execute code block at least once.
+            do {
+                console.log("I am inside of a loop that has a false condition.");
+            } while (false);
+
+            // For loop. The parenthesis has 3 parts to it: initalization, the condition, the iterator. The iterator part runs AFTER the code block is done.
+            for (var i = 10; i >= 0; i = i - 1) {
+
+                // example if statement inside a for loop.
+                if (i == 7) {
+                    console.log("You got a lucky number!");
+                }
+                
+                // You can put any programming structure inside of loops like this if statement.
+                if (i % 2 == 0) {
+                    console.log("The number " + i + " is even.");
+                } else {
+                    console.log("This number is odd");
+                }
+
+            }
+
+            // Nesting loops
+
+            for (var i = 0; i < 10; i = i + 1) {
+
+                for (var e = 0; e < 10; e = e  + 1) {
+
+                    for (var o = 0; o < 10; o = o + 1) {
+                        // With nested loops, code may run many more times than one believes! Hello will be console logged 1000 times!
+                        console.log("hello");
+                    }
+
+                }
+
+            }
+
+            for (var i = 0; i < 10; i++) {}
+
+            for (var i = 0; i < 10; i++) {}
+
+            // Functions, group of code that runs when function name is called.
+
+            function myFirstFunction() {
+                console.log("*");
+                console.log("**");
+                console.log("*");
+
+                for (var i = 0; i < 10; i = i + 1) {
+                    console.log("$");
+                }
+            }
+
+            for (var i = 0; i < 100; i = i + 1) {
+                myFirstFunction();
+            }
+
+            console.log("Done!");
+
+            // Scopes
+
+            var a = "hello";
+
+            function mySecondFunction() {
+                // var a = "goodbye";
+                var b = "good day";
+
+                console.log(a);
+            }
+
+            // Cannot access b variable because it is in a private scope.
+            //console.log(b);
+
+            // console.log(a);
+
+            mySecondFunction();
+
+
+
+
+            // USEFUL VARIABLE AND FUNCTION NAMES
+
+            var a = 19;
+            var age = 19;
+            // userAge would be the "best" name of this set.
+            var userAge = 19;
+            var aValueThatIsReallyImportantToAnIndividualBecauseItSignifiesHowLongTheyHaveLived = 19;
+
+            function a() {}
+
+            function someFunction() {}
+            // addTwoNumbers best name for this set.
+            function addTwoNumbers() {}
+
+            function accepts2NumbersAndAddsThemTogether() {}
+
+
+        </script>
+    </body>
+</html>

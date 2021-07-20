@@ -1,6 +1,10 @@
 .slides {
     display: flex;
+    /*overflow x es para la barra horrizontal
+    las propiedades pueden ser auto, hidden*/
+
     overflow-x: auto;
+    /*scroll snap type es para desplazar las imagenes*/
     scroll-snap-type: x mandatory;
 }
 body{
@@ -12,6 +16,7 @@ body{
     flex-shrink: 0;
     width: 100%;
     height: 500px;
+    /*controla como hace las transiciones con el scrooll*/
     scroll-snap-align: start;
     scroll-behavior: smooth;
     background: black;

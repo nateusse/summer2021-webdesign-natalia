@@ -1,0 +1,39 @@
+
+
+Colors:
+--- body:beige
+--- header: blue-black
+--- links:blue
+--- backgrounds: beige
+
+Fonts ------------------
+---- header: font-family: 'Oswald', sans-serif;
+---- p: font-family: 'Roboto Mono', monospace;
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+
+Images ----------------------
+    - Selfie
+    - Tech skills (java, html, css,jquery, javascript, sql, python)
+    - Social media (linkedIn, github,gmail)
+
+
+----------------------WHO I AM------------------------
+
+My name is Natalia Eusse a portrait artist, psychologist, martial artist, traveler, and  future cat mother. 
+
+Currently, I'm an international student at City College of San Francisco. Next year, I will get a certificate as a back-end Java developer, will be able to enroll in a Master in Computer Science and I will get my bachelors as a software developer from my contry Colombia.
+
+-----------------CONTACT PAGE ------------------------
+Feel free to reach me out at: 
+--- gmail: natyeusse@gmail.com
+--  github: https://github.com/nateusse
+--  linkedIn:
+
+------------------PROJECTS -----------------------------
+Currently working in React,solving algorithms in Python, and
+practicing CRUD in Java.
+
+

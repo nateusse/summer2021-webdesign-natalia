@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move the Circle</title>
+
+
+    <style>
+        #circle {
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+    </style>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    
+    <script>
+
+        $(function () {
+
+            // COPIED FROM WEEK 7 RANDOM COLOR CODE
+            $("#circle").click(function () {
+                var redColor = Math.floor(Math.random() * 256);
+                var greenColor = Math.floor(Math.random() * 256);
+                var blueColor = Math.floor(Math.random() * 256);
+                var color = "rgb(" + redColor + "," + greenColor + ","+ blueColor + ")";
+                console.log(color);
+                document.body.style.backgroundColor = color;
+            });
+
+            // Listens to any keypress regardless of what is focused on the webpage.
+            $(document).keypress(function (event) {
+
+
+                // A set of if statements that activated based on the key pressed. numbers are for A D W S.
+                if (event.which == 97) {
+                    
+                    // Get the existing margin-left of circle.
+                    var existingMargin = $("#circle").css("margin-left");
+
+                    // Convert string to a number.
+                    existingMargin = parseInt(existingMargin);
+
+                    // Subtract 100 to number.
+                    existingMargin = existingMargin - 100;
+
+                    // Assign number to margin-left of circle.
+                    $("#circle").css("margin-left", existingMargin + "px");
+                
+                } else if (event.which == 100) {
+
+                    var existingMargin = $("#circle").css("margin-left");
+                    existingMargin = parseInt(existingMargin);
+
+                    // Add 100 to number.
+                    existingMargin = existingMargin + 100;
+                    $("#circle").css("margin-left", existingMargin + "px");
+                
+                } else if (event.which == 119) {
+                    // Get existing margin-top of circle.
+                    var existingMargin = $("#circle").css("margin-top");
+                    existingMargin = parseInt(existingMargin);
+                    existingMargin = existingMargin - 100;
+                    $("#circle").css("margin-top", existingMargin + "px");
+
+                } else if (event.which == 115) {
+
+                    var existingMargin = $("#circle").css("margin-top");
+                    existingMargin = parseInt(existingMargin);
+                    existingMargin = existingMargin + 100;
+                    $("#circle").css("margin-top", existingMargin + "px");
+
+                }
+            });
+
+        });
+
+    </script>
+</head>
+<body>
+
+    <div id="circle"></div>
+
+</body>
+</html>

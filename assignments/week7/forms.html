@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Forms</title>
+
+    <style>
+
+    </style>
+
+</head>
+<body>
+
+    <form id="signup">
+        <label for="fname">Which one is your name:</label>
+        <input type="text" name="fname" id="fname" />
+        <input type="button" value="Click" id="mybutton" />
+        <p>Add to Mailing List?</p>
+        <label for="mailinglist1">Yes</label>
+        <input type="radio" name="mailinglist" id="mailinglist1" value="yes" checked />
+        <label for="mailinglist2">No</label>
+        <input type="radio" name="mailinglist" id="mailinglist2" value="no" />
+        <br />
+        <label for="eula1">Do you agree with the terms and conditions?</label>
+        <input type="checkbox" checked name="eula" id="eula1" value="yes" />
+        <br />
+        <input type="reset" />
+        <input type="submit" />
+    </form>
+
+    <p id="output"></p>
+    
+    <script>
+
+        // var myFunction = function () {
+        //     console.log("Hello");
+        // };
+
+        // Asynchronous JavaScript. Code runs "Independently" of each other.
+
+        // setTimeout(myFunction, 3000);
+
+
+        // setTimeout(function () {
+        //     console.log("goodbye!");
+        // }, 4000);
+
+        // Gets the Press Me button object.
+        var myButton = document.getElementById("mybutton");
+
+        // Tells JS to "listen" for a "click" on the Press Me button. When clicked, run the function that we defined as the second argument.
+        myButton.addEventListener("click", function () {
+            
+            // Grab the entire form with the ID of signup.
+            var myForm = document.getElementById("signup");
+
+            // No longer used to interact with the user.
+            //alert("Welcome to my website, no viruses I promise!");
+
+            // Grab the input with the name of "fname"
+            var myTextBox = myForm.elements["fname"];
+            // Grab the value of that input we selected.
+            // NOTE: any value that is from the outside of JS will ALWAYS be a string.
+            var userInput = myTextBox.value;
+
+            // Add exlamation points to our variable value.
+            userInput = userInput + "It's raining men, hallelujah!";
+            
+            // Select the element with the ID of output.
+            var paragraph = document.getElementById("output");
+
+            // Set the inner HTML of that element we selected.
+            paragraph.innerHTML = userInput;
+        });
+
+
+
+
+
+
+        
+
+        console.log("Finished running code!");
+
+    </script>
+</body>
+</html>

@@ -378,6 +378,292 @@
 
             function accepts2NumbersAndAddsThemTogether() {}
 
+            // Arguments and Parameters
+            // Argument are the data that WILL BE stored in a Parameter.
+            // Parameter is a special variable that belong to a function.
+
+            function makeItRain(value) {
+
+                // var strength = value;
+
+                if (value == 1) {
+                    console.log("A drizzle has started.");
+                } else if (value == 2) {
+                    console.log("It started raining.");
+                } else if (value == 3) {
+                    console.log("It's raining cats and dogs.");
+                } 
+            }
+
+            makeItRain(1);
+
+            makeItRain(3);
+
+            makeItRain(1);
+
+            makeItRain(4);
+
+            // Math.pow()
+            // Math.sqrt()
+
+            function hypotenuse(width, height) {
+                // var width = 10;
+                // var height = 4;
+
+                var squaredWidth = Math.pow(width, 2);
+                var squaredHeight = Math.pow(height, 2);
+                
+                var squaredSum = squaredWidth + squaredHeight;
+
+                var results = Math.sqrt(squaredSum);
+
+                console.log(results);
+
+                // Same code, but in a single line.
+                // console.log(Math.sqrt((Math.pow(width, 2) + Math.pow(height, 2))));
+            }
+
+            var result = hypotenuse(19, 11);
+
+
+            hypotenuse(4, 16);
+            console.log("Hello there");
+
+            // Returning Values from Functions
+
+            var myVar = 10;
+
+            // "Returning" a value from a variable is as easy as calling it.
+            myVar;
+
+            function exampleFunction() {
+                var a = 100;
+                var b = 50;
+
+                // allows the function to "send back" a single value.
+                return "Function has finished";
+            }
+
+            var myNumber = exampleFunction();
+
+            console.log(myNumber);
+
+            // Putting it all together for Functions
+
+            function add2Numbers(number1, number2) {
+                var sum = number1 - number2;
+
+
+                return sum;
+            }
+
+            var myResults = add2Numbers(7, 13);
+
+            var sendToConsole = add2Numbers(myResults, myResults);
+
+            console.log(sendToConsole);
+
+            // Arrays & Objects
+            var thisIsAVariable = "One Thing";
+
+            thisIsAVariable = "Another thing";
+
+            var firstDay = "Monday";
+            var secondDay = "Tuesday";
+            // etc.
+
+            // empty Array.
+            var myArray = [];
+
+            var mySecondArray = [1, 2, 3, 4, 5];
+            //          Indexes: 0  1  2  3  4
+            
+            var myThirdArray = ["A", "B", "C"];
+            //                   0    1    2
+
+            // Array Indexes = an "address" of an item in an array.
+            // Array Element = an "item" in an Array.
+            // Indexes start from 0, not 1!
+
+            var myNum = mySecondArray[3];
+            console.log(myNum);
+
+            var myText = myThirdArray[1];
+            console.log(myText);
+
+            console.log(mySecondArray);
+
+            // Array Methods
+
+            // Getting the LAST value in an array. Also removes it from the Array.
+            console.log( myThirdArray.pop() );
+
+            console.log( myThirdArray );
+
+            // Putting a value at the END of the array.
+            myThirdArray.push("c");
+
+            console.log( myThirdArray );
+
+            // Getting the FIRST value in an array. Also removes it from the Array.
+            console.log( myThirdArray.shift() );
+
+            console.log( myThirdArray );
+
+            // Putting a value at the START of the array.
+            myThirdArray.unshift("a");
+
+            console.log( myThirdArray );
+        
+            // Also very useful, returns the total count of elements in that array.
+            console.log( myThirdArray.length );
+
+
+            var myRandomArray = [10, 600, "hello", true];
+            var myProperArray = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+            // Updating a single value in an Array.
+            var myEmployeeSalaries = [16000, 21000, 40000, 7000];
+            // Use the index when you are assigning the value, otherwise you will be replacing the ENTIRE array.
+            myEmployeeSalaries[1] = 23000;
+
+            // Multi-dimensional Arrays = when there are arrays within an array.
+
+            var mapShapeCoords = [
+                [14, 28],
+                [19, 36],
+                [8, 32]
+            ];
+
+            36;
+
+            mapShapeCoords[2][1]; // Access number 32.
+            mapShapeCoords[0][0]; // Access number 14.
+
+            // Updating number 8 to a number 9.
+            mapShapeCoords[2][0] = 9;
+
+            console.log(mapShapeCoords);
+
+            var sum = mapShapeCoords[0][0] + mapShapeCoords[2][1];
+
+            console.log(sum);
+
+
+            // Combining Loops and Arrays.
+
+            var salaries = [19900, 34998, 29990, 49976, 88944, 10000];
+            // Task: Add a 5% bonus for everyone.
+
+            // Bonus for 1 Salary START
+            var oldSalary = salaries[0];
+            var percentBonus = .05;
+            var newSalary = oldSalary + (oldSalary * percentBonus);
+
+            salaries[0] = newSalary;
+            // Bonus for 1 Salary END
+
+            console.log(salaries);
+
+            for (var i = 0; i < salaries.length; i = i + 1) {
+                var old = salaries[i];
+                salaries[i] = old + (old * .05);
+            }
+
+            console.log(salaries);
+
+            // Objects
+
+            // Objects are VALUES, or datatypes, they usually are assigned to something and need the semicolon to end the statement.
+            var myFirstObject = {};
+
+            // Code blocks usually end an If, Loops, or Function, and they DON'T end with a semicolon.
+            if (false) {}
+
+            var mySecondObject = {
+                "name": "Eduardo",
+                "age": 31
+            };
+
+            var myEmployee1 = ["Eduardo", 31, "part-time", "MEDA"];
+
+            var myEmployee2 = {
+                "name": "Eduardo",
+                age: 31,
+                "status": "part-time",
+                employer: "MEDA",
+                "active": true,
+                "current position": "instructor",
+                "daysWorked": [14, 19, 20, 21],
+                "education": [
+                    {
+                        institution: "CCSF",
+                        years: 3,
+                        days: [18, 19, 20]
+                    },
+                    {
+                        institution: "Berkeley City College",
+                        years: 1
+                    }
+                ]
+            };
+
+            // Getting the days Array from education Array.
+            console.log( myEmployee2.education[0].days[1] );
+
+            // Bracket Notation, needs to have a string datatype to access that value inside of the object.
+            console.log( myEmployee2["status"] );
+
+            // Dot notation, must be a String with NO SPACES, should NOT use quotes.
+            myEmployee2.status;
+            myEmployee2.age;
+            console.log( myEmployee2.active );
+
+            // If your key has a space in it, you CANNOT us dot notation as it will cause a syntax error. Must use square bracket notation.
+            myEmployee2["current position"];
+
+            console.log(myEmployee2);
+
+            myEmployee2.name = "Edward";
+            myEmployee2["current position"] = "none";
+
+            console.log(myEmployee2);
+
+            myEmployee2.status = "full-time";
+            myEmployee2.salary = 50000;
+
+            console.log(myEmployee2);
+
+            // Objects: Properties & Methods.
+            // Properties are "variables" that belong to an object.
+            // Methods are "functions" that belong to an object.
+
+
+            // Functions without a name are Anonymous function. This "function" in the object can only be called by the key name instead.
+            var myThirdObject = {
+                myProperty: 10,
+                myMethod: function () {
+                    console.log("Hello");
+                }
+            };
+
+            console.log( myThirdObject.myProperty );
+
+            myThirdObject.myMethod();
+            console.log("hello");
+
+            Math.pow(10, 2);
+            Math.sqrt(100);
+
+            var anotherArray = [];
+
+            anotherArray.push("Something new");
+
+            // salaries.push();
+            // salaries.pop();
+            // salaries.unshift();
+            // salaries.shift();
+            salaries.length;
 
         </script>
     </body>

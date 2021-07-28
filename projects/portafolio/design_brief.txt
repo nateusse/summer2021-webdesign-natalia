@@ -37,3 +37,40 @@ Currently working in React,solving algorithms in Python, and
 practicing CRUD in Java.
 
 
+-----------------------Homework8-2----------------------------
+
+-------------------   Portafolios   --------------------------
+ https://mattfarley.ca/
+ I liked that is simple, it has his own logo, related with tech, it has an avatar, the color purple, it show the brand that he worked with. I don't like that requires scroll down, no clicks
+
+
+https://caferati.me/portfolio
+I liked that I can see every project and it has links to each web page, it has divisions, comment section,  organized in a way to see back-end and front-end projects. I disliked that I can't control the speed of the interactivities, not clicks no come back. 
+
+
+https://workdiary.de/
+I liked that is simple, it keep a topic of black and white and it change between those, the cursor is interactive, logo of the brands. I disliked that there is not a menu.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
